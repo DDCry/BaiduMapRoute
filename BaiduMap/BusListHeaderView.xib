@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BusListHeaderView" customModule="BaiduMap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqu-nx-Flv">
+                    <rect key="frame" x="50" y="0.0" width="4" height="60"/>
+                    <color key="backgroundColor" red="0.098039215690000001" green="0.78823529410000004" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="Gl2-Wv-GQj"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down.png" translatesAutoresizingMaskIntoConstraints="NO" id="FWP-A0-ws7">
+                    <rect key="frame" x="45" y="23" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="JdW-jn-vOd"/>
+                        <constraint firstAttribute="width" constant="15" id="u0G-QO-4W5"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bh1-f9-1cg">
+                    <rect key="frame" x="10" y="18" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="JeQ-av-Ce0"/>
+                        <constraint firstAttribute="height" constant="25" id="b5M-zd-VqD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="光谷大道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvV-SQ-0p3">
+                    <rect key="frame" x="85" y="20" width="495" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="iHw-XZ-MtC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.098039215690000001" green="0.78823529410000004" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="FWP-A0-ws7" firstAttribute="centerX" secondItem="nqu-nx-Flv" secondAttribute="centerX" id="4sp-e4-ltO"/>
+                <constraint firstItem="nqu-nx-Flv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ABM-GW-I69"/>
+                <constraint firstItem="nqu-nx-Flv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="EM4-2E-GxQ"/>
+                <constraint firstItem="BvV-SQ-0p3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Gpd-0K-dHu"/>
+                <constraint firstItem="FWP-A0-ws7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Imx-pB-Jno"/>
+                <constraint firstAttribute="trailing" secondItem="BvV-SQ-0p3" secondAttribute="trailing" constant="20" id="Mp5-fe-pzA"/>
+                <constraint firstItem="FWP-A0-ws7" firstAttribute="centerY" secondItem="nqu-nx-Flv" secondAttribute="centerY" id="TR4-EN-RWC"/>
+                <constraint firstItem="BvV-SQ-0p3" firstAttribute="leading" secondItem="FWP-A0-ws7" secondAttribute="trailing" constant="25" id="aOs-Lg-7js"/>
+                <constraint firstItem="Bh1-f9-1cg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cgk-70-4i4"/>
+                <constraint firstItem="Bh1-f9-1cg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dQK-Em-aZU"/>
+                <constraint firstItem="FWP-A0-ws7" firstAttribute="top" secondItem="nqu-nx-Flv" secondAttribute="bottom" constant="-35" id="oON-TZ-N1f"/>
+                <constraint firstItem="FWP-A0-ws7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="r6D-b8-Bro"/>
+                <constraint firstItem="FWP-A0-ws7" firstAttribute="top" secondItem="nqu-nx-Flv" secondAttribute="bottom" constant="-35" id="r6P-9i-UpL"/>
+                <constraint firstAttribute="bottom" secondItem="nqu-nx-Flv" secondAttribute="bottom" id="toO-kf-lKk"/>
+                <constraint firstItem="FWP-A0-ws7" firstAttribute="centerY" secondItem="nqu-nx-Flv" secondAttribute="centerY" id="uzK-KO-KLc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Imx-pB-Jno"/>
+                    <exclude reference="TR4-EN-RWC"/>
+                    <exclude reference="oON-TZ-N1f"/>
+                    <exclude reference="r6D-b8-Bro"/>
+                    <exclude reference="r6P-9i-UpL"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="bus.png" width="44" height="42"/>
+        <image name="down.png" width="28" height="28"/>
+    </resources>
+</document>

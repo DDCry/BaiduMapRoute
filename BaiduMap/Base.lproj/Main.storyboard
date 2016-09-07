@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H25-iz-mAB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iVh-k4-8QP">
+            <objects>
+                <navigationController id="H25-iz-mAB" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JAb-M8-YpF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ies-op-EMX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ec-QF-2jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-745" y="-288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BaiduMap" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r44-kc-WpO">
+                                <rect key="frame" x="0.0" y="144" width="320" height="424"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TestCell" rowHeight="60" id="uKR-RH-vd9" customClass="TestCell" customModule="BaiduMap">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uKR-RH-vd9" id="lUs-cq-efP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUr-m0-cFB">
+                                                    <rect key="frame" x="50" y="0.0" width="4" height="60"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.78823529410000004" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="4" id="sGM-TM-0y1"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看线路" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4w-AJ-AyU">
+                                                    <rect key="frame" x="94" y="20" width="226" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="QIf-ZI-HYx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="Q4w-AJ-AyU" firstAttribute="leading" secondItem="tUr-m0-cFB" secondAttribute="trailing" constant="40" id="3hG-x6-V0g"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q4w-AJ-AyU" secondAttribute="trailing" id="6dH-Ub-b9h"/>
+                                                <constraint firstItem="tUr-m0-cFB" firstAttribute="top" secondItem="lUs-cq-efP" secondAttribute="top" id="BGG-3D-cdA"/>
+                                                <constraint firstItem="tUr-m0-cFB" firstAttribute="leading" secondItem="lUs-cq-efP" secondAttribute="leading" constant="50" id="JAr-tc-FP4"/>
+                                                <constraint firstItem="Q4w-AJ-AyU" firstAttribute="centerY" secondItem="lUs-cq-efP" secondAttribute="centerY" id="Osd-7U-dHV"/>
+                                                <constraint firstAttribute="bottom" secondItem="tUr-m0-cFB" secondAttribute="bottom" id="vnc-j5-5w3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3nY-N7-yZC" kind="show" id="MEP-is-S9c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="h8w-b2-IxA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zli-BU-cSz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="r44-kc-WpO" secondAttribute="trailing" id="9Tk-yX-JtD"/>
+                            <constraint firstItem="r44-kc-WpO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="DWD-5p-IVI"/>
+                            <constraint firstItem="r44-kc-WpO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aYX-By-I5I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r44-kc-WpO" secondAttribute="bottom" id="nfD-Yg-jed"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="m65-Lu-1Ey"/>
+                    <connections>
+                        <outlet property="myTB" destination="r44-kc-WpO" id="RSF-nU-eep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234" y="-288"/>
+        </scene>
+        <!--Way Points Search Demo View Controller-->
+        <scene sceneID="GjL-JW-Kp2">
+            <objects>
+                <viewController storyboardIdentifier="WayPointsSearchDemoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3nY-N7-yZC" customClass="WayPointsSearchDemoViewController" customModule="BaiduMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4EL-eV-dQX"/>
+                        <viewControllerLayoutGuide type="bottom" id="LUG-SY-syY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KGd-f3-0ZY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GME-wn-oft" customClass="BMKMapView">
+                                <rect key="frame" x="0.0" y="142" width="375" height="525"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAJ-0s-nyq">
+                                <rect key="frame" x="69" y="93" width="182" height="30"/>
+                                <state key="normal" title="路线搜索">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="wayPointsCarRouteSearch:" destination="3nY-N7-yZC" eventType="touchUpInside" id="OBW-aJ-Sdd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yrX-gy-gre"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="_mapView" destination="GME-wn-oft" id="ggs-1R-WKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCV-w2-uWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="-288"/>
+        </scene>
+    </scenes>
+</document>
