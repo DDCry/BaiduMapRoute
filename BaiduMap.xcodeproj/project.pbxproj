@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496EC9541D7FE2C5005AD5CD /* map.gif in Resources */ = {isa = PBXBuildFile; fileRef = 496EC9531D7FE2C5005AD5CD /* map.gif */; };
 		49B6C4AD1D38BEBE001BAFF2 /* DDSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B6C4AC1D38BEBE001BAFF2 /* DDSegmentedControl.swift */; };
 		49B6C4B11D38C2F2001BAFF2 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B6C4AF1D38C2F2001BAFF2 /* DynamicColor.swift */; };
 		49B6C4B21D38C2F2001BAFF2 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B6C4B01D38C2F2001BAFF2 /* HSL.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		28274152204B234093D33FB0 /* Pods-BaiduMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiduMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiduMap/Pods-BaiduMap.debug.xcconfig"; sourceTree = "<group>"; };
+		496EC9531D7FE2C5005AD5CD /* map.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map.gif; sourceTree = "<group>"; };
 		49B6C4AC1D38BEBE001BAFF2 /* DDSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSegmentedControl.swift; sourceTree = "<group>"; };
 		49B6C4AF1D38C2F2001BAFF2 /* DynamicColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColor.swift; sourceTree = "<group>"; };
 		49B6C4B01D38C2F2001BAFF2 /* HSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSL.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				49B6C4C21D38D178001BAFF2 /* bus@2x.png */,
 				49B6C4C31D38D178001BAFF2 /* bus@3x.png */,
 				49C6161E1D35EDCF0046A787 /* Assets.xcassets */,
+				496EC9531D7FE2C5005AD5CD /* map.gif */,
 				49B6C4BB1D38CFF3001BAFF2 /* down.png */,
 				49B6C4BC1D38CFF3001BAFF2 /* down@2x.png */,
 				49B6C4BD1D38CFF3001BAFF2 /* down@3x.png */,
@@ -332,6 +335,7 @@
 				49B6C4BE1D38CFF3001BAFF2 /* down.png in Resources */,
 				49B6C4C01D38CFF3001BAFF2 /* down@3x.png in Resources */,
 				49B6C4C41D38D178001BAFF2 /* bus.png in Resources */,
+				496EC9541D7FE2C5005AD5CD /* map.gif in Resources */,
 				49B6C4BF1D38CFF3001BAFF2 /* down@2x.png in Resources */,
 				49B6C4C61D38D178001BAFF2 /* bus@3x.png in Resources */,
 				49C6161F1D35EDCF0046A787 /* Assets.xcassets in Resources */,
